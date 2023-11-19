@@ -1,4 +1,4 @@
-// Cart.js
+
 import datos from './datos.json';
 export default function Cart( {addProduct}) {
 

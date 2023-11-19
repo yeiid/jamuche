@@ -10,10 +10,6 @@ export default  function Product () {
 
   const {
     allProducts,
-    setallProducts,
-    conProduct,
-    setconProduct,
-    Total,
     setTotal,
   } = context;
 
@@ -21,24 +17,27 @@ export default  function Product () {
     // Verifica si el producto ya está en el carrito.
     const found = allProducts.find(p => p.id === product.id);
   
-    // Si el producto ya está en el carrito, actualiza la cantidad.
+    // Si el producto ya está en el carrito, actualiza la cantidad y el precio.
     if (found) {
       found.cantidad = Math.max(found.cantidad + 1, 1);
-      setTotal(Total + product.precio * found.cantidad);
+      // found.precio = product.precio;
     } else {
       // Si el producto no está en el carrito, lo agrega.
       allProducts.push(product);
-      setTotal(Total + product.precio);
-      console.log(Total)
     }
-  };
+
+    const totalPrice = allProducts.reduce((acc, product) => {
+      return acc + product.precio * product.cantidad;
+    }, 0);
+    setTotal(totalPrice);
+   };
+
+   console.log(allProducts)
 
   return(
     <>
     <Cart addProduct={addProduct}/>
     </>
   )
-
-
 };
 

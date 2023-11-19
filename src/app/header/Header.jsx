@@ -1,23 +1,10 @@
 "use client";
-import { useContext, useState } from "react";
+import {  useState } from "react";
 import Carrito from "./Carrito";
-
-import {ContextProduct} from "@/context/Usecontext";
-
 
 import "./header.css";
 
 function Header() {
-  const context = useContext(ContextProduct);
-
-  const {
-    allProducts,
-    setallProducts,
-    conProduct,
-    setconProduct,
-    Total,
-    setTotal,
-  } = context;
 
   const [Active, setActive] = useState(true);
 

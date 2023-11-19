@@ -2,55 +2,55 @@
     {
       "id":1,
       "cantidad":1,
-      "precio": "$5000",
+      "precio": "5000",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id":2,
       "cantidad":1,
-      "precio": "$8000",
+      "precio": "8000",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id":3,
       "cantidad":1,
-      "precio": "$9200",
+      "precio": "9200",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id":4,
       "cantidad":1,
-      "precio": "$9000",
+      "precio": "9000",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },    {
       "id":5,
       "cantidad":1,
-      "precio": "$5000",
+      "precio": "5000",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id":6,
       "cantidad":1,
-      "precio": "$8000",
+      "precio": "8000",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id":7,
       "cantidad":1,
-      "precio": "$9200",
+      "precio": "9200",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id":8,
       "cantidad":1,
-      "precio": "$9000",
+      "precio": "9000",
       "name": "matera",
       "img":"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
