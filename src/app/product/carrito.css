@@ -1,0 +1,67 @@
+/* carrito.css */
+
+.cart-products {
+  position: fixed;
+  top: 50%;
+  background-color: #45a049;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegura que el carrito esté sobre otros elementos en la página */
+}
+
+.carrito-conten {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.cart-count {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.carrito-cart {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px;
+  border-bottom: 1px solid rgba(240, 233, 233, 0.355);
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #45a049;
+}
+
+.quantity-controls span {
+  margin: 0 7px;
+  font-weight: bold;
+}
+
+
+.total-p {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+

@@ -1,72 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&family=Oxygen:wght@400;700&display=swap");
 
 /* variables de estilos */
 :root {
-  --white:#ffffff;
-  --black:#000000;
-  --very-light-pink: #c7c7c7;
-  --text-input-field:#f7f7f7;
-  --hospital-green:#ACD9B2;
+  --white: #ffffff;
+  --black: #af9494;
+  --very-light-pink: rgb(32, 165, 28);
+  --text-input-field: #f7f7f7;
+  --hospital-green: #60df71;
 
   /* medidas de texto */
-  --ms:14px;
-  --md:16px;
-  --lg:18px
+  --ms: 14px;
+  --md: 16px;
+  --lg: 18px;
 }
 
 /* base */
 
-body{
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
-
-}
-
-ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-}
-figure{
-  margin: 0;
-}
-img{
-  object-fit: cover;
-}
-p{
-  margin: 0;
+  background-color: var(--black);
+  /* font-family: "Maven Pro", sans-serif; */
+  font-family: "Oxygen", sans-serif;
 }
 
 
-
-
-.section{
+.section {
   width: 100%;
   height: 100vh;
   display: grid;
   place-items: center;
 }
 
-.form-container{
+.form-container {
   display: grid;
-  grid-template-rows:auto 1fr auto ;
+  grid-template-rows: auto 1fr auto;
   width: 300px;
 }
-.label{
+.label {
   font-size: var(--sm);
   font-weight: bold;
   margin-bottom: 4px;
 }
 
-.input{
+.input {
   background-color: var(--text-input-field);
   border: none;
   border-radius: 8px;
@@ -75,20 +55,19 @@ p{
   padding: 6px;
   margin-bottom: 12px;
 }
-.title{
-  
+.title {
   font-size: var(--lg);
   margin: 12px;
   text-align: center;
 }
 
-.subtitle{
+.subtitle {
   font-size: var(--md);
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 32px;
 }
-.primary-button{
+.primary-button {
   background-color: var(--hospital-green);
   border-radius: 8px;
   border: none;
@@ -98,7 +77,7 @@ p{
   font-size: var(--md);
   font-weight: bold;
   height: 50px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .secondary-button {
@@ -111,11 +90,7 @@ p{
   font-size: var(--md);
   font-weight: bold;
   height: 50px;
-
 }
 
-
-@media (max-width:640px){
-
-
+@media (max-width: 640px) {
 }

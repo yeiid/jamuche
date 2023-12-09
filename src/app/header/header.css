@@ -1,122 +1,50 @@
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 24px;
-    border-bottom: 1px solid var(--very-light-pink);
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--very-light-pink);
 }
-.menu{
+
+.menu {
+  display: none;
+  /* Agregar estilos según sea necesario para el ícono del menú */
+}
+
+.logo {
+  width: 5rem;
+  /* Estilos para el logo si es necesario */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left :Link {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--whithe);
+} 
+
+.navbar-left ul:hover {
+  color: var(--hospital-green);
+  border-radius: 10px;
+}
+
+
+@media (max-width: 640px) {
+  nav {
+    align-items: center;
+  }
+
+  .menu {
+    display: block;
+    width: 20px;
+    height: 20px;
+    /* Agregar estilos según sea necesario para el ícono del menú en versión móvil */
+  }
+
+  .navbar-left :link {
     display: none;
-}
-
-.logo{
-    width: 5rem;
-}
-
-.navbar-left ul ,
-.navbar-right ul{
-    display: flex;
-    align-items: center;
-    height: 60px;
-}
-.navbar-left{
-    display: flex;
-    align-items: center;
-}
-.navbar-left ul{
-    margin-left: 12px;
-}
-.navbar-left ul li a,
-.navbar-right ul li a{
-    color: var(--very-light-pink);
-    border: 1px solid var(--whithe);
-    padding: 8px;
-    border-radius: 8px;
-}
-
-.navbar-left ul li a:hover,
-.navbar-right ul li a:hover{
-    color: var(--very-light-pink);
-    border: 1px solid var( --hospital-green);
-    color: var(--hospital-green);
-}
-.navbar-right{
-    display: flex;
-    align-items: center;
-}
-
-.navbar-email{
-    color: var(--very-light-pink);
-    font-size: var(--ms);
-    margin-right: 22px;
-}
-.navbar-shopin-cart{
-    position: relative;
-}
-
-.navbar-shopin-cart div{
-    display: flex;
-    width: 16px;
-    height: 16px;
-    background-color: var(--hospital-green);
-    border-radius: 50%;
-    font-size: var(--ms);
-    font-weight: bold;
-    position: absolute;
-    top: -7px;
-    right: 0px;
-    justify-content: center;
-
-}
-.carrito{
-    width: 2rem;
-}
-.cart-products{
-    background-color: var(--hospital-green);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    border-radius: 15px;
-}
-.carrito-display {
-    position: absolute;
-    margin: 1rem;
-}
-.carrito-hiden{
-    display: none;
-}
-.carrito-info{
-    width: 300px;
-}
-.title{
-    display: flex;
-    width: 270px;
-    height: 60px;
-    background-image: url('https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-repeat: no-repeat;
-    justify-content: space-around;
-}
-
-
-@media (max-width:640px){
-
-    nav{
-        align-items: center;
-    }
-    .menu{
-        display: block;
-        width: 20px;
-        height: 20px;
-    }
-
-    .navbar-left ul {
-        display: none;
-    }
-    .navbar-email{
-        display: none;
-    }
+  }
 }

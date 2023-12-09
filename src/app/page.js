@@ -1,17 +1,14 @@
+import { CartProvider } from "@/context/Usecontext";
 
 
+import Home from "./home/Home";
 
-import ContextProvider from '@/context/Usecontext'
-
-import Header from '@/app/header/Header'
-import Product from '@/app/product/Product'
-export default function Home() {
-
-return(
-  <ContextProvider>
-    <Header/>
-    <Product/>
-  </ContextProvider>
-)
+function App() {
+  return (
+    <CartProvider>
+      <Home />
+    </CartProvider>
+  );
 }
 
+export default App;
