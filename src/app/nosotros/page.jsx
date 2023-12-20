@@ -1,12 +1,14 @@
+
+
+
 import Component from "@/components/component"
 
-
-const page = () => {
+const Nosotros = () => {
   return (
-    <div>
+    <>
       <Component/>
-    </div>
+    </>
   )
 }
 
-export default page
+export default Nosotros;
