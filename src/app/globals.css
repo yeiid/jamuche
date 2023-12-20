@@ -48,14 +48,6 @@ body {
   margin-bottom: 1.5rem;
   transition: background-color 0.2s ease-in-out;
 
-  &:hover {
-    background-color: darken(var(--hospital-green), 5%);
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
-  }
 }
 
 .secondary-button {
@@ -69,12 +61,4 @@ body {
   height: 40px;
   transition: border-color 0.2s ease-in-out;
 
-  &:hover {
-    border-color: darken(var(--very-light-pink), 10%); /* Use provided color */
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
-  }
 }
