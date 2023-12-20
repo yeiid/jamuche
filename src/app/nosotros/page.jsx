@@ -1,7 +1,7 @@
 
 
 
-import Component from "@/components/component"
+import Component from "@/components/Component"
 
 const Nosotros = () => {
   return (
