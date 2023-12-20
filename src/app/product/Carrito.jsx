@@ -45,35 +45,36 @@ const Carrito = () => {
   }
   return (
     <div className="cart-products">
-
-
-      <div className="carrito-conten">
-        <div className="title">
+              <div className="title">
           <h2>JAMUCHE´E</h2>
-        </div >
+        </div>
+      <div className="carrito-conten">
+
         {cart.length > 0 ? (
           <>
             <div className="cart-count">
               Total de artículos:{" "}
               {cart.reduce((count, item) => count + item.quantity, 0)}
             </div>
-            {cart.map((item) => (
-              <div key={item.id} className="carrito-cart">
-                <div className="quantity-controls">
-                  <button onClick={() => decreaseQuantity(item.id)}>-</button>
-                  <span>{item.quantity}</span>
-                  <button onClick={() => increaseQuantity(item.id)}>+</button>
+            <div className="cart-items">
+              {cart.map((item) => (
+                <div key={item.id} className="carrito-cart">
+                  <div className="quantity-controls">
+                    <button onClick={() => decreaseQuantity(item.id)}>-</button>
+                    <span>{item.quantity}</span>
+                    <button onClick={() => increaseQuantity(item.id)}>+</button>
+                  </div>
+                  <p>{item.name}</p>
+                  <p>${item.price}</p>
+                  <button
+                    onClick={() => removeFromCart(item.id)}
+                    className="primary-button"
+                  >
+                    Remove
+                  </button>
                 </div>
-                <p>{item.name}</p>
-                <p>${item.price}</p>
-                <button
-                  onClick={() => removeFromCart(item.id)}
-                  className="primary-button"
-                >
-                  Remove 
-                </button>
-              </div>
-            ))}
+              ))}
+            </div>
             <div className="total-p">
               <p>Total:</p>
               <span>${calculateTotal()}</span>
@@ -82,12 +83,17 @@ const Carrito = () => {
               Comprar
             </button>
           </>
+
         ) : (
-          <p>Your cart is empty.</p>
+          <div className="cart-close">
+
+          <p>Carrito vacio</p>
+          </div>
         )}
       </div>
     </div>
   );
+  
 };
 
 export default Carrito;

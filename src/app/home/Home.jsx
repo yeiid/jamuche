@@ -10,6 +10,7 @@ const Home = () => {
   const [Active, setActive] = useState(true);
   return (
     <>
+      
       <div className="navbar-shopin-cart" onClick={() => setActive(!Active)}>
         
         <img
@@ -21,9 +22,8 @@ const Home = () => {
       <div className={`carrito-display ${Active ? "" : "carrito-hiden"}`}>
       <Carrito />
       </div>
-      <div>
         <Product />
-      </div>
+
     </>
   );
 };

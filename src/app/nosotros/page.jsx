@@ -1,11 +1,10 @@
+import Component from "@/components/component"
+
 
 const page = () => {
   return (
     <div>
-      hola soy nosotros
-      <h3>quiero que sepas que esta pagina hay que arreglARLA
-        
-      </h3>
+      <Component/>
     </div>
   )
 }

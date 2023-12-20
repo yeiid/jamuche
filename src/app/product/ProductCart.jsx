@@ -22,7 +22,7 @@ const ProductCart = ({ product }) => {
           </div>
         </div>
         <button onClick={() => addToCart()} className="primary-button">
-          Add to Cart
+          añadir
         </button>
       </div>
     </>

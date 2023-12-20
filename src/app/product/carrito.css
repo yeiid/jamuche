@@ -1,27 +1,29 @@
-/* carrito.css */
-
 .cart-products {
   position: fixed;
-  top: 50%;
+  max-width: 500px;
+  max-height: 300px;
+  overflow: auto;
+  top: 15%;
+  left: 78%;
   background-color: #45a049;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  max-width: 400px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Asegura que el carrito esté sobre otros elementos en la página */
+  z-index: 1000;
 }
 
-.carrito-conten {
-  display: flex;
-  flex-direction: column;
-  
-}
+
 
 .cart-count {
   margin-bottom: 10px;
   font-weight: bold;
+}
+
+.cart-items {
+  overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0px;
 }
 
 .carrito-cart {
@@ -54,7 +56,6 @@
   font-weight: bold;
 }
 
-
 .total-p {
   display: flex;
   width: 100%;
@@ -64,4 +65,31 @@
 }
 
 
+.cart-close{
+  width: 90%;
+}
+.cart-close p{
+  color: black;
+}
 
+
+@media screen and (max-width: 840px) {
+  .cart-products {
+    left: 58%;
+  }
+  
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 580px) {
+  .cart-products {
+    left: 35%;
+  }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas (ej. dispositivos pequeños) */
+@media screen and (max-width: 420px) {
+  .cart-products {
+    left: 30%;
+  }
+}

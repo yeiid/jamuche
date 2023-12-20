@@ -1,24 +1,13 @@
 
-
-
-
-
-
 .navbar-shopin-cart{
-    position: absolute;
-    right: 0px;
+    position: fixed;
+    right: 10px;
 
 }
 .carrito{
     width: 2rem;
 }
-
-
-
-.carrito-display {
-    position: absolute;
-    margin: 1rem;
-}
 .carrito-hiden{
     display: none;
 }
+
