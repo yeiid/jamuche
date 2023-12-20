@@ -28,7 +28,7 @@ const Component = () => {
           </p>
         </div>
         <img
-          src="../app/info/01.jpeg"
+          src="https://i.pinimg.com/564x/8b/25/00/8b25005c451d8133c2b8651da913fd0c.jpg"
           alt="Our Story Image"
           className="w-full rounded-md shadow-md xl:w-auto"
         />
@@ -36,7 +36,7 @@ const Component = () => {
 
       <section className="grid grid-cols-1 xl:grid-cols-2 gap-10 rounded-b-xl bg-gray-200 py-10">
         <img
-          src="path/to/programmer-image.jpg"
+          src="https://i.pinimg.com/564x/8b/25/00/8b25005c451d8133c2b8651da913fd0c.jpg"
           alt="Programmer Image"
           className="w-48 rounded-full shadow-md mx-auto xl:w-auto xl:mx-0"
         />
